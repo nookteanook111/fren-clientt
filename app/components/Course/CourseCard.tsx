@@ -39,7 +39,7 @@ const CourseCard: FC<Props> = ({ item, isProfile, expireIn = null }) => {
         {/* for PC */}
         <div className="hidden md:block">
           <div>
-            <h1 className="text-[16px] font-semibold md:text-[24px] text-[#555555] dark:text-[#fff]">
+            <h1 className="text-[16px] font-semibold md:text-[20px] text-[#555555] dark:text-[#fff]">
               {item.name}
             </h1>
           </div>

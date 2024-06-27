@@ -8,10 +8,7 @@ import 'react-multi-carousel/lib/styles.css'
 
 const mockBanner = [
   {
-    url: '/banner/2-new.jpeg',
-  },
-  {
-    url: '/banner/1-new.jpeg',
+    url: '/banner1.png',
   },
 ]
 const responsive = {

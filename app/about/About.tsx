@@ -5,6 +5,8 @@ import Image from 'next/image'
 import AboutDetail from './components/AboutDetail'
 import AboutHeader from './components/AboutHeader'
 import Container from './components/Container'
+import Exprerient from './components/Experience'
+import Reward from './components/Reward'
 
 const About = () => {
   return (
@@ -13,10 +15,10 @@ const About = () => {
       <div className="flex justify-center">
         <div
           data-aos="fade-up"
-          className="w-fit flex flex-col lg:flex-row items-start max-lg:items-center md:shadow-xl rounded-xl md:overflow-hidden"
+          className="w-fit flex flex-col lg:flex-row items-start max-lg:items-center rounded-xl md:overflow-hidden"
         >
           <Image
-            src="/profile_host.jpg"
+            src="/host.JPG"
             alt="Teacher"
             width={500}
             height={500}
@@ -24,6 +26,10 @@ const About = () => {
           />
           <AboutDetail />
         </div>
+      </div>
+      <div className="grid grid-cols-2">
+        <Exprerient />
+        <Reward />
       </div>
     </Container>
   )

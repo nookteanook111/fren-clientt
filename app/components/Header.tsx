@@ -12,7 +12,8 @@ import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { toast } from 'react-hot-toast'
-import { FaUser } from 'react-icons/fa6'
+import { FaArrowRightToBracket } from 'react-icons/fa6'
+import { FaUser, FaUserPlus } from 'react-icons/fa6'
 import { HiOutlineMenuAlt3, HiOutlineUserCircle } from 'react-icons/hi'
 
 import avatar from '../../public/assests/avatar.png'
@@ -146,13 +147,22 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
                     />
                   </Link>
                 ) : (
-                  <button
-                    onClick={() => setOpen(true)}
-                    className=" hidden sm:hidden shadow-md xl:flex ml-2 items-center gap-2 bg-primary p-2 rounded-xl ring-2 ring-sky-400"
-                  >
-                    <FaUser size={20} className="text-white" />
-                    <p className="text-white">เข้าสู่ระบบเรียน</p>
-                  </button>
+                  <>
+                    <button
+                      onClick={() => setOpen(true)}
+                      className=" hidden sm:hidden xl:flex ml-2 items-center gap-2 border text-black p-2 rounded-xl"
+                    >
+                      <FaArrowRightToBracket size={20} />
+                      <p>เข้าสู่ระบบเรียน</p>
+                    </button>
+                    <button
+                      onClick={() => setOpen(true)}
+                      className=" hidden sm:hidden xl:flex ml-2 items-center gap-2 bg-primary p-2 rounded-xl"
+                    >
+                      <FaUserPlus size={20} className="text-white" />
+                      <p className="text-white">สมัครเรียน</p>
+                    </button>
+                  </>
                 )}
               </div>
             </div>
@@ -201,7 +211,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
                 <br />
                 <br />
                 <p className="text-[16px] px-2 pl-5 text-black dark:text-white">
-                  Copyright © 2023 LMS
+                  Copyright © 2024 LMS
                 </p>
               </div>
             </div>

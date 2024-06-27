@@ -41,9 +41,9 @@ function Home({ webInfo }: any) {
       <LandingBanner />
     
       {/* <LandingPage /> */}
-      <CategorySubject />
-      <Tutor />
-      <CategoryCourse />
+      {/* <CategorySubject /> */}
+      {/* <Tutor /> */}
+      {/* <CategoryCourse /> */}
 
       {/* <TeacherExperience />
             <PeopleReview />

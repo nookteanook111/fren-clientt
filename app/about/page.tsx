@@ -33,6 +33,7 @@ const Page = (_props: Props) => {
         route={route}
       />
       <About />
+      
       {/* <Vision />
       <TutorTeam />
       <Environment /> */}

@@ -47,8 +47,8 @@ const config: Config = {
         "1024px": "1024px",
       },
       colors:{
-        "primary":"#244C6C",
-        "secondary":"#00AAFF",
+        "primary":"#001a5b",
+        "secondary":"#E42D26",
         "orangetheme":"#FF5122",
         "greentheme":"#16DEC8",
         "bgmain":"#F9F6EC"
