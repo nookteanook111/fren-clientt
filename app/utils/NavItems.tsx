@@ -13,60 +13,6 @@ export const navItemsData = [
   {
     name: 'คอร์สออนไลน์',
     url: '/courses',
-    subMenu: [
-      {
-        name: 'คอร์สเรียน ม.ต้น',
-        url: '/courses?title=คอร์ส ม.ต้น',
-        supersubMenu: [
-          {
-            name: 'คอร์สเรียน ม.ต้น(แยกบท)',
-            url: '/courses',
-          },
-          {
-            name: 'คอร์สเรียน ม.ต้น(Package)',
-            url: '/courses',
-          },
-        ],
-      },
-      {
-        name: 'คอร์สเรียน ม.ปลาย',
-        url: '/courses?title=คอร์ส ม.ปลาย',
-        supersubMenu: [
-          {
-            name: 'คอร์สเรียน ม.ปลาย(แยกบท)',
-            url: '/courses',
-          },
-          {
-            name: 'คอร์สเรียน ม.ปลาย(Package)',
-            url: '/courses',
-          },
-        ],
-      },
-      {
-        name: 'คอร์ส Package',
-        url: '/courses?title=คอร์ส Package',
-      },
-      {
-        name: 'คอร์สเตรียมสอบ NETSAT',
-        url: '/courses?title=คอร์สเตรียมสอบ NETSAT',
-      },
-      {
-        name: 'คอร์สเตรียม A-level',
-        url: '/courses?title=คอร์สเตรียมสอบ A-Level',
-      },
-      {
-        name: 'คอร์สเตรียมสอบ ก.พ.',
-        url: '/courses?title=คอร์สเตรียมสอบ',
-      },
-      {
-        name: 'คอร์สเตรียมสอบครูผู้ช่วย',
-        url: '/courses?title=คอร์สเตรียมสอบ',
-      },
-      {
-        name: 'คอร์สเตรียมสอบนายสิบ',
-        url: '/courses?title=คอร์สเตรียมสอบ',
-      },
-    ],
   },
   // {
   //   name: 'ห้องเรียนฟรี',
@@ -101,140 +47,50 @@ type Props = {
 }
 
 const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-  const [active, setActive] = useState('')
-  const router = useRouter()
   const pathname = usePathname()
-
-  const resetActive = () => {
-    setActive('')
-  }
-  const hightlightMenu = 'เข้าสู่ห้องเรียน'
-
   return (
     <>
-      <div className="hidden 800px:flex">
+      <div className="hidden lg:flex">
         {navItemsData &&
-          navItemsData.map((item, index) => {
-            if (item.subMenu?.length) {
-              return (
-                <div className="relative">
-                  <span
-                    className={`${
-                      pathname === item.url ? '' : 'dark:text-white text-black'
-                    } text-[16px] px-6 font-[400] cursor-pointer flex items-center justify-center gap-1 `}
-                    onMouseOver={() => setActive(item.name)}
-                  >
-                    <div>{item.name}</div>
-                    <GoChevronDown />
-                  </span>
-                  <div
-                    onMouseLeave={resetActive}
-                    className={`flex text-black dark:text-white justify-center absolute z-10 top-[28px] min-w-[143px] transition  ease-out ${active === item.name ? 'visible' : 'hidden'}`}
-                  >
-                    <ListGroup className="w-48">
-                      {item.subMenu.map((subItem, subIndex) => {
-                        return (
-                          <ListGroup.Item
-                            onClick={() => router.push(subItem.url)}
-                            key={`sub-${subIndex}`}
-                          >
-                            {subItem.name}
-                          </ListGroup.Item>
-                        )
-                      })}
-                    </ListGroup>
-                  </div>
-                </div>
-              )
-            }
-
-            return (
-              <Link href={`${item.url}`} key={index} passHref>
-                <span
-                  onMouseOver={resetActive}
-                  className={`${
-                    pathname === item.url
-                      ? 'text-primary border-b-[4px] pb-6 border-b-secondary dark:text-white'
-                      : 'dark:text-white text-black'
-                  } text-[16px] px-4 py-2 font-[400] hover:border-b-[4px] hover:border-b-secondary hover:pb-6 ${item.name === hightlightMenu ? 'border-solid border-2 border-red-300 py-1 rounded-md' : null} `}
-                >
-                  {item.name}
-                </span>
-              </Link>
-            )
-          })}
+          navItemsData.map((i, index) => (
+            <Link href={`${i.url}`} key={index} passHref>
+              <span
+                className={`${
+                  pathname === i.url
+                    ? 'text-primary border-b-4 border-secondary pb-6 text-[16px] px-6 font-[400]'
+                    : 'dark:text-white text-[#4A4A4A]'
+                } text-[16px] hover:border-b-4 hover:border-secondary hover:pb-6 px-6 font-[400]`}
+              >
+                {i.name}
+              </span>
+            </Link>
+          ))}
       </div>
       {isMobile && (
-        <div className="800px:hidden mt-5 pb-3">
-          <div className="w-full text-center py-6">
+        <div className=" 1024px:hidden mt-5">
+          {/* <div className="w-full text-center py-6">
             <Link href={'/'} passHref>
               <span
-                className={`text-[25px] font-[500] text-black dark:text-white`}
+                className={`text-[25px] font-Poppins font-[500] text-black dark:text-white`}
               >
                 ELearning
               </span>
             </Link>
-          </div>
+          </div> */}
           {navItemsData &&
-            navItemsData.map((item, index) => {
-              if (item.subMenu?.length) {
-                return (
-                  <div className="relative">
-                    <span
-                      className={`${
-                        pathname === item.url
-                          ? 'text-black font-bold'
-                          : 'dark:text-white text-black'
-                      } text-[16px] px-6 font-[400] cursor-pointer flex justify-left gap-1 py-5 w-[95%]`}
-                      onMouseOver={() => setActive(item.name)}
-                    >
-                      <div>{item.name}</div>
-                      <GoChevronDown />
-                    </span>
-                    <div
-                      onMouseLeave={resetActive}
-                      className={`flex justify-left px-8 py-2 z-10 top-[28px] min-w-[143px] transition  ease-out ${active === item.name ? 'visible' : 'hidden'}`}
-                    >
-                      <ul>
-                        {item.subMenu.map((subItem, subIndex) => {
-                          return (
-                            <li
-                              onClick={() => router.push(subItem.url)}
-                              key={`sub-${subIndex}`}
-                              className="py-2"
-                            >
-                              <span className="text-[8px] pr-2 text-black dark:text-white"></span>{' '}
-                              {subItem.name}
-                              <hr />
-                            </li>
-                          )
-                        })}
-                      </ul>
-                    </div>
-                  </div>
-                )
-              }
-
-              return (
-                <Link
-                  onMouseOver={resetActive}
-                  href={`${item.url}`}
-                  passHref
-                  key={index}
+            navItemsData.map((i, index) => (
+              <Link href={`${i.url}`} passHref key={index}>
+                <span
+                  className={`${
+                    pathname === i.url
+                      ? 'text-[#AC0013] font-bold'
+                      : 'dark:text-white text-[#4A4A4A]'
+                  } block py-5 text-[16px] px-6 font-Poppins font-[400]`}
                 >
-                  <span
-                    className={`${
-                      pathname === item.url
-                        ? 'text-primary dark:text-primary font-bold'
-                        : 'dark:text-white text-black'
-                    } block py-5 text-[16px] px-6 font-[400] ${item.name === hightlightMenu ? 'border-solid border-2 border-red-300 py-1 rounded-md' : null}`}
-                  >
-                    {item.name}
-                  </span>
-                </Link>
-              )
-            })}
+                  {i.name}
+                </span>
+              </Link>
+            ))}
         </div>
       )}
     </>
