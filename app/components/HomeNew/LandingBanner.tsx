@@ -33,7 +33,7 @@ const responsive = {
 function LandingBanner() {
   return (
     <div>
-      <Carousel infinite responsive={responsive} autoPlaySpeed={5000} autoPlay>
+      {/* <Carousel infinite responsive={responsive} autoPlaySpeed={5000} autoPlay>
         {mockBanner.map((item, index) => (
           <Image
             src={item.url}
@@ -43,7 +43,7 @@ function LandingBanner() {
             className="w-full"
           />
         ))}
-      </Carousel>
+      </Carousel> */}
       <Image
         src="/banner1.png"
         alt=""
