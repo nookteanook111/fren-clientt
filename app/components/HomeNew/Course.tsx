@@ -96,7 +96,7 @@ const Courses = (props: Props) => {
   }, [data])
 
   return (
-    <div className="pb-10" style={{ backgroundImage: `url(/paper.png)` }}>
+    <div className="pb-10">
       <div className={`container mx-auto pt-10 color-white`}>
         {/* <Image src={'/heropro.jpg'} height={100} width={500} alt="" className="object-scale-down rounded-2xl md:w-full flex justify-center lg:w-[10] " />  */}
         <br />

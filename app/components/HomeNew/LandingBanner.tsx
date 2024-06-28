@@ -44,6 +44,13 @@ function LandingBanner() {
           />
         ))}
       </Carousel>
+      <Image
+            src="/banner1.png"
+            alt=""
+            width={1500}
+            height={400}
+            className="w-full"
+          />
     </div>
   )
 }

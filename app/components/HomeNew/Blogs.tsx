@@ -18,7 +18,7 @@ const Blogs = (props: Props) => {
     }, [data]);
 
     return (
-        <div className=" w-full  pb-20" style={{ backgroundImage: `url(/paper.png)` }}>
+        <div className=" w-full  pb-20">
             <div className={`w-[90%] 800px:w-[80%] m-auto pt-10`}>
                 <h1 data-aos="fade-down" className="text-center text-black text-[25px] leading-[35px] sm:text-3xl lg:text-4xl dark:text-white 800px:!leading-[60px]  font-[700] tracking-tight">
                     บทความเพื่อน้องๆ
