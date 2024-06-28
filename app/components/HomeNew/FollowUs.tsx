@@ -9,15 +9,15 @@ import { FaXTwitter } from 'react-icons/fa6'
 const socialList = [
   {
     icon: FaFacebookF,
-    id: 'frenchpeakpeak',
+    id: 'เรียนภาษาฝรั่งเศส ยังไงก็พีค French PeakPeak ',
     name: 'facebook',
-    link: 'https://www.facebook.com/extramathsDD?mibextid=ZbWKwL',
+    link: 'https://www.facebook.com/FrenchPeakPeak',
   },
   {
     icon: FaYoutube,
-    id: 'frenchpeakpeak',
+    id: 'FrenchPeakPeak',
     name: 'youtube',
-    link: 'https://youtube.com/@extramaths?si=q3sEaEEt-rqcnh8Q',
+    link: 'https://www.youtube.com/@FrenchPeakPeak',
   },
 ]
 

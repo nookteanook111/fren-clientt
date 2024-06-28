@@ -3,10 +3,8 @@ import CoursePlayer from '@/app/utils/CoursePlayer'
 import React from 'react'
 
 const YOUTUBE = [
-  { url: 'https://www.youtube.com/watch?v=kSTKNU8Y414' },
-  { url: 'https://www.youtube.com/watch?v=lc2dh233gvg' },
-  { url: 'https://www.youtube.com/watch?v=gxhMiyIvgoA' },
-  { url: 'https://www.youtube.com/watch?v=4PpCt5bdCxw' },
+  { url: 'https://www.youtube.com/watch?v=2NbtjavPIX8' },
+  { url: 'https://www.youtube.com/watch?v=dJ9Qmunro3U' },
 ]
 
 const ExampleTeach = () => {
@@ -24,7 +22,7 @@ const ExampleTeach = () => {
         className="w-full flex gap-3 justify-center pt-[50px]"
         data-aos="fade-down"
       >
-        <div className="w-full md:max-w-[70%] grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="w-full md:max-w-[80%] grid grid-cols-1 md:grid-cols-2 gap-5">
           {YOUTUBE.map(({ url }, index) => (
             <div
               key={`example-teach-${index}`}
