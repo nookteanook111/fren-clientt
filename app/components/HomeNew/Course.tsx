@@ -57,9 +57,10 @@ const PrevArrow = props => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FFBE00',
+        backgroundColor: '#E42D26',
         width: '40px',
         height: '40px',
+        zIndex:"99"
       }}
       onClick={onClick}
     />
@@ -76,9 +77,10 @@ const NextArrow = props => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FFBE00',
+        backgroundColor: '#E42D26',
         width: '40px',
         height: '40px',
+        zIndex:"99"
       }}
       onClick={onClick}
     />
