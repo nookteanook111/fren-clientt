@@ -244,7 +244,7 @@ const SlipPayment = ({ product, data }: IProps) => {
                   <ImageNext alt='' src='/logo-krungthai.png' width={300} height={300} />
                   <p className='text-xl text-gray-700'>เลขบัญชี</p>
                   <p onClick={handleCopy} className='text-2xl px-20 py-2 bg-slate-300 flex justify-center items-center relative cursor-pointer'>{BANK_NO} <FaRegCopy className=' cursor-pointer absolute right-0 pr-3 text-3xl' /></p>
-                  <div className='text-sm mt-[-13px]'>นายศศิวัฒน์ สุริยะแก่นทราย</div>
+                  <div className='text-sm mt-[-13px]'>นายชาครัตน์ บัวเกตุ</div>
                   <div>ยอดรวมราคา <span className=' underline font-semibold'>{data?.price?.toLocaleString() ?? ''}</span> บาท</div>
                   <p>อัพโหลดสลิปโอนเงิน</p>
                   <p className='text-[red] text-[12px] mt-[-20px]'>*โปรดตรวจสอบสลิปก่อนทำรายการ</p>
