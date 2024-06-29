@@ -147,7 +147,7 @@ const SlipPaymentEbook = ({ product, data }: IProps) => {
           <div>
             <p className='text-left text-[18px] font-semibold'>ยืนยันการโอนเงิน</p>
             <div className='flex flex-col justify-center items-center gap-4 mt-5'>
-              <ImageNext alt='' src='/kbank-logo.png' width={300} height={300} />
+              <ImageNext alt='' src='/logo-krungthai.png' width={300} height={300} />
               <p className='text-xl text-gray-700'>เลขบัญชี</p>
               <p onClick={handleCopy} className='text-xl md:text-2xl px-10 md:px-20 py-2 bg-slate-300 flex justify-center items-center relative cursor-pointer'>{BANK_NO} <FaRegCopy className=' cursor-pointer absolute right-0 pr-3 text-3xl' /></p>
               <div className='text-sm mt-[-13px]'>นายศศิวัฒน์ สุริยะแก่นทราย</div>
