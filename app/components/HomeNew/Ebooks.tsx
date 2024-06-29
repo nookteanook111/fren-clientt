@@ -18,7 +18,7 @@ const Ebooks = (props: Props) => {
     <div className="bg-gradient-to-r from-secondary to-blue-500">
       <div className={`w-[90%] 800px:w-[80%] m-auto pt-10`}>
         <h1 data-aos="fade-down" className="text-center font-Poppins text-[25px] leading-[35px] sm:text-3xl lg:text-4xl dark:text-white 800px:!leading-[60px] text-[#fff] font-[700] tracking-tight">
-          MathEbook หนังสือของเรา
+          Ebook หนังสือของเรา
           {/* <span className="text-gradient text-[32px]"></span>{" "} */}
         </h1>
         <br />

@@ -20,21 +20,21 @@ const Footer = (props: Props) => {
               </h3>
               <div>
                 <p className=" text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
-                  กวดวิชาออนไลน์คณิตครูอ๋อ
+                  
                 </p>
               </div>
               <div>
                 <p className="text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
-                  Email : extramaths@hotmail.com
+                  Email : frenchpeakpeak@gmail.com
                 </p>
                 <p className=" text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
                   Line : <span> </span>
                   <Link
                     href={
-                      'https://line.me/R/ti/p/@361nxolu?from=page&searchId=361nxolu'
+                      'https://lin.ee/8e7KCcu'
                     }
                   >
-                    @extramaths
+                    @frenchpeakpeak
                   </Link>
                 </p>
               </div>
