@@ -24,18 +24,15 @@ const Footer = (props: Props) => {
                 </p>
               </div>
               <div>
-                <p className="text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
-                  Email : extramaths@hotmail.com
-                </p>
+                <Link href={'mailto:frenchpeakpeak@gmail.com'}>
+                  <p className="text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
+                    Email : frenchpeakpeak@gmail.com
+                  </p>
+                </Link>
+
                 <p className=" text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
                   Line : <span> </span>
-                  <Link
-                    href={
-                      'https://line.me/R/ti/p/@361nxolu?from=page&searchId=361nxolu'
-                    }
-                  >
-                    @extramaths
-                  </Link>
+                  <Link href={'https://lin.ee/8e7KCcu'}>@frenchpeakpeak</Link>
                 </p>
               </div>
             </div>

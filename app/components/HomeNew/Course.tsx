@@ -60,7 +60,7 @@ const PrevArrow = props => {
         backgroundColor: '#E42D26',
         width: '40px',
         height: '40px',
-        zIndex:"99"
+        zIndex: '99',
       }}
       onClick={onClick}
     />
@@ -80,7 +80,7 @@ const NextArrow = props => {
         backgroundColor: '#E42D26',
         width: '40px',
         height: '40px',
-        zIndex:"99"
+        zIndex: '99',
       }}
       onClick={onClick}
     />
