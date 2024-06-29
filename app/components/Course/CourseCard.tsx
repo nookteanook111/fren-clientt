@@ -28,7 +28,7 @@ const CourseCard: FC<Props> = ({ item, isProfile, expireIn = null }) => {
     <div>
       {/* <div className="w-full h-[120px] md:min-h-[35vh]  box-shadow-grow  dark:bg-slate-500 dark:bg-opacity-20 backdrop-blur  rounded-lg md:p-3 p-1"> */}
 
-      <div className="w-full max-w-[300px] border-2 md:h-[initial] md:min-h-[35vh] bg-white flex flex-col md:block   dark:bg-slate-500 dark:bg-opacity-20 hover:scale-95 duration-300 rounded-lg md:p-3 p-1">
+      <div className="w-full border-2 md:h-[initial] md:min-h-[35vh] bg-white flex flex-col md:block   dark:bg-slate-500 dark:bg-opacity-20 hover:scale-95 duration-300 rounded-lg md:p-3 p-1">
         <Image
           src={item.thumbnail.url}
           width={500}
