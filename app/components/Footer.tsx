@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
               </h3>
               <div>
                 <p className=" text-base text-gray-300 dark:text-gray-300 dark:hover:text-white pb-2">
-                  กวดวิชาออนไลน์คณิตครูอ๋อ
+                  
                 </p>
               </div>
               <div>

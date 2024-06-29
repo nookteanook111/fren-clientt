@@ -1,20 +1,20 @@
 import Home from "./components/HomeNew/Home";
 
 export const metadata = {
-  title: "extramaths คณิตครูอ๋อ",
+  title: "frenchpeakpeak",
   description:
-  "คอร์สเรียนคณิตศาสตร์ออนไลน์ ม.ต้น ม.ปลาย | extramaths.net",
+  "frenchpeakpeak",
   keywords:
     "ONLINE,course,study,ระบบเรียนออนไลน์,ทำคอร์สเรียนออนไลน์ ทำระบบการเรียนออนไลน์ ทำกราฟฟิก ตัดต่อวีดีโอ เเละดูเเลการยิงโฆษณา ",
   openGraph: {
-    title: "extramaths ",
-    description: "คอร์สเรียนคณิตศาสตร์ออนไลน์ ม.ต้น ม.ปลาย | extramaths.net",
-    url: "https://www.extramaths.net",
+    title: "frenchpeakpeak ",
+    description: "frenchpeakpeak",
+    url: "https://www.frenchpeakpeak.com",
 
-    siteName: "extramaths",
+    siteName: "frenchpeakpeak",
     images: [
       {
-        url: "https://res.cloudinary.com/de6lgysk2/image/upload/v1717065215/logo-tab_j5odyt.png",
+        url: "https://res.cloudinary.com/dzq52nvuo/image/upload/v1719649702/lurm5bgn7brbklorzo0u.png",
         width: 800,
         height: 600,
       },
@@ -24,11 +24,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "extramaths คณิตครูอ๋อ",
+    title: "frenchpeakpeak",
     description:
-      "คอร์สเรียนคณิตศาสตร์ออนไลน์ ม.ต้น ม.ปลาย | extramaths.net",
+      "frenchpeakpeak",
     images: [
-      "https://res.cloudinary.com/de6lgysk2/image/upload/v1717065215/logo-tab_j5odyt.png",
+      "https://res.cloudinary.com/dzq52nvuo/image/upload/v1719649702/lurm5bgn7brbklorzo0u.png",
     ],
   },
 };
