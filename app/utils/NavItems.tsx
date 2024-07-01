@@ -22,10 +22,10 @@ export const navItemsData = [
   //   name: 'Ebook',
   //   url: '/ebook',
   // },
-  {
-    name: 'คลังข้อสอบ',
-    url: '/examination',
-  },
+  //{
+   // name: 'คลังข้อสอบ',
+    //url: '/examination',
+  //},
   {
     name: 'เกี่ยวกับเรา',
     url: '/about',
