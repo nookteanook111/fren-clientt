@@ -21,7 +21,7 @@ const Blogs = (props: Props) => {
         <div className=" w-full  pb-20">
             <div className={`w-[90%] 800px:w-[80%] m-auto pt-10`}>
                 <h1 data-aos="fade-down" className="text-center text-black text-[25px] leading-[35px] sm:text-3xl lg:text-4xl dark:text-white 800px:!leading-[60px]  font-[700] tracking-tight">
-                    บทความเพื่อน้องๆ
+                    ฝรั่งเศสน่ารู้
                     <br />
                 </h1>
                 <div data-aos="fade-right" className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-3 lg:gap-[25px] 1500px:grid-cols-4 1500px:gap-[35px] mb-12 border-0">
