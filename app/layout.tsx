@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className="font-Opun bg-white text-black bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300">
+      <body className="font-Poppins bg-white text-black bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300">
         <CustomProvider>
           <Providers>
             <SessionProvider>

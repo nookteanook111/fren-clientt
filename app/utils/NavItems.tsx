@@ -27,6 +27,10 @@ export const navItemsData = [
     //url: '/examination',
   //},
   {
+    name: 'ฝรั่งเศสน่ารู้',
+    url: '/blog',
+  },
+  {
     name: 'เกี่ยวกับเรา',
     url: '/about',
   },

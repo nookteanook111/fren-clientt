@@ -96,13 +96,13 @@ const Courses = (props: Props) => {
   }, [data])
 
   return (
-    <div className="pb-10">
+    <div className="pb-10 font-Poppins">
       <div className={`container mx-auto pt-10 color-white`}>
         {/* <Image src={'/heropro.jpg'} height={100} width={500} alt="" className="object-scale-down rounded-2xl md:w-full flex justify-center lg:w-[10] " />  */}
         <br />
         <br />
 
-        <h1 className="text-center text-black text-[25px] leading-[35px] sm:text-3xl lg:text-4xl dark:text-white 800px:!leading-[60px]  font-[700] tracking-tight">
+        <h1 className="text-center font-Poppins text-black text-[25px] leading-[35px] sm:text-3xl lg:text-4xl dark:text-white 800px:!leading-[60px]  font-[700] tracking-tight">
           คอร์สเรียนแนะนำ
         </h1>
         <br />
