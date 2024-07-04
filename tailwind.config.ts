@@ -29,6 +29,7 @@ const config: Config = {
       fontFamily: {
         Poppins: ["var(--font-Poppins)"],
         Josefin: ["var(--font-Josefin)"],
+        Opun:["Opun", "sans-serif"]
         
       },
       backgroundImage: {

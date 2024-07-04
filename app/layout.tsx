@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
-
+import { Poppins ,Anuphan } from "next/font/google";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { SessionProvider } from 'next-auth/react'
@@ -15,6 +15,13 @@ import { Providers } from './Provider'
 import LoadUser from './components/LoadUser/LoadUser'
 import './globals.css'
 import { ThemeProvider } from './utils/theme-provider'
+
+const poppins = Anuphan({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-Poppins",
+});
+
 
 export default function RootLayout({
   children,
@@ -31,7 +38,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className="font-Poppins bg-white text-black bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300">
+      <body className={`${poppins.variable} bg-white text-black bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}>
         <CustomProvider>
           <Providers>
             <SessionProvider>
@@ -41,7 +48,7 @@ export default function RootLayout({
                 enableSystem
               >
                 <LoadUser>
-                  <div>{children}</div>
+                  <div className="font-Poppins">{children}</div>
                 </LoadUser>
                 <Toaster position="top-center" reverseOrder={false} />
               </ThemeProvider>
