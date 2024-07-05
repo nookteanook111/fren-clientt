@@ -58,7 +58,7 @@ function Home({ webInfo }: any) {
 
 
       <ExampleTeach />
-      <Blogs />
+     
 
       <FollowUs />
       <LineFix />

@@ -19,6 +19,18 @@ const socialList = [
     name: 'youtube',
     link: 'https://www.youtube.com/@FrenchPeakPeak',
   },
+  {
+    icon: FaInstagram,
+    id: 'frenchpeakpeak',
+    name: 'Instagram',
+    link: 'https://www.instagram.com/frenchpeakpeak',
+  },
+  {
+    icon: FaTiktok,
+    id: '@frenchpeakpeak',
+    name: 'Tiktok',
+    link: 'https://www.tiktok.com/@frenchpeakpeak',
+  },
 ]
 
 const FollowUs = () => {
