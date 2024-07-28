@@ -8,7 +8,12 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
+    
     <footer className="bg-primary">
+                <Script
+            id="dbd-init"
+            src="https://www.trustmarkthai.com/callbackData/initialize.js?t=078f85bf-21-6-c2e216f99e168126151aad77a2f31fd598da30"
+          />
       <div className="border border-[#ffffff0e] dark:border-[#ffffff1e]" />
       <br />
       <div className="w-[95%] 800px:w-full 800px:max-w-[85%] mx-auto px-2 sm:px-6 lg:px-8">
