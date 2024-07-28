@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaFacebook, FaLine } from 'react-icons/fa6'
-
+import Script from 'next/script'
 type Props = {}
 
 const Footer = (props: Props) => {
@@ -67,6 +67,9 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <br />
+        <div className="flex justify-center">
+          <div id="Certificate-banners"></div>
+        </div>
         <p className="text-center text-white dark:text-white">
           Copyright © 2023 ELearning | All Rights Reserved
         </p>
